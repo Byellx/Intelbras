@@ -40,8 +40,8 @@ export default function Home(){
         setAux(true)
     }
 
-    const changeImage = () => {
-        fetch('http://localhost:3005/getImage')
+    const changeImage = async() => {
+        await fetch('http://localhost:3005/getImage')
                     .then((res)=> {
                         return res.json()
                     })
